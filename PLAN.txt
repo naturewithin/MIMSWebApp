@@ -1,0 +1,8 @@
+##MIMS WEB APP PLAN
+
+Main.py: executes the program
+Parse.py: reads in a .lvm file of variables
+toSQL.py: populates a SQL database
+Plots.py: create data models using Data.py
+Data.py: initializes data variables to be used in other classes
+README.md: description
