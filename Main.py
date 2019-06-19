@@ -3,9 +3,6 @@
 # This file is taken from the Dash installation guide for testing purposes:
 # https://dash.plot.ly/getting-started
 
-__author__ = "Sarah Shinn"
-__email__ = "sashinn@ucsd.edu"
-__status__ = "Prototype"
 
 import dash
 import dash_core_components as dcc
