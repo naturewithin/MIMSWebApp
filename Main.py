@@ -1,4 +1,12 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# This file is taken from the Dash installation guide for testing purposes:
+# https://dash.plot.ly/getting-started
+
+__author__ = "Sarah Shinn"
+__email__ = "sashinn@ucsd.edu"
+__status__ = "Prototype"
+
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -11,8 +19,10 @@ app.layout = html.Div(children=[
     html.H1(children='MIMS Data'),
 
     html.Div(children='''
-        This is a development server. Do not use it in a production deployment. Deployment server credits see: https://dash.plot.ly/getting-started
-    '''),
+        This is a development server. Do not use it in production 
+        deployment. Deployment server credits see: 
+        https://dash.plot.ly/getting-started
+'''),
 
     dcc.Graph(
         id='example-graph',
