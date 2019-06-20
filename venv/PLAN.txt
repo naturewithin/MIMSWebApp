@@ -4,8 +4,6 @@
 Main.py: executes the program in a web app
 - currently using a sample deployment server provided by Dash
 Parse.py: reads in a .lvm file of variables
-- create a LabVIEW program to convert .lvm to a string
-toSQL.py: populates a SQL database
 Plots.py: create data models using Data.py
 Data.py: initializes data variables to be used in other classes
 README.md: description
@@ -13,19 +11,16 @@ README.md: description
 Use a cron job to automate daily data updates
 
 STEP 1:
-- convert .lvm to string or txt using LabVIEW
+- create Parse.py
 
 STEP 2:
-- import data from STEP 1 into Parse.py
-
-STEP 3:
 - Create Data.py from Parse.py
 
+STEP 3:
+- Create Plots.py from Data.py
+
 STEP 4:
-- Create Plots.py or toSQL.py
+- Create Main.py from Plots.py
 
 STEP 5:
-- Create Main.py
-
-STEP 6:
 - Automate daily updates using cron
