@@ -8,27 +8,26 @@ __status__ = "Prototype"
 
 
 class Parse:
-
     def __init__(self, filename):
         self.filename = filename
 
-    def getDate(self):
+    def get_date(self):
         return "2019-06-19"
 
-    def _readFile(self, filename):
-        file = open(filename, "r")
-        data = file.read()
+    def _read_file(self):
+        with open(self.filename, "r") as f:
+            data = f.read()
         return data
 
-    def getData(self):
-        data = self._readFile(self.filename)
+    def get_data(self):
+        data = self._read_file()
         return data
 
-    def printVar(self):
+    def print_var(self):
         print(self.filename)
 
 
 obj = Parse("2019613_.lvm")
-obj.printVar()
-print(obj.getDate())
-print(obj.getData())
+obj.print_var()
+print(obj.get_date())
+print(obj.get_data())
