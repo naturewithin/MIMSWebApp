@@ -26,8 +26,24 @@ class Parse:
     def print_var(self):
         print(self.filename)
 
+    def parse(self):
+        data = self.get_data()
+        word = 'Comment'
+        start_index = data.find(word) + len(word)
+        data_block = data[start_index:]
+        
+        if start_index != -1:
+            print(start_index)
+            print(data_block)
+
+
+        # find the first instance Comment
+        # clean up data
+        # start reading in variables in a 2 dimensional array
+
 
 obj = Parse("2019613_.lvm")
-obj.print_var()
-print(obj.get_date())
-print(obj.get_data())
+# obj.print_var()
+# print(obj.get_date())
+# print(obj.get_data())
+obj.parse()
