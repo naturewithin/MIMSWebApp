@@ -7,7 +7,8 @@ __email__ = "sashinn@ucsd.edu"
 __status__ = "Prototype"
 
 
-class Parse:
-    filename = ""
-    def __init__(self):
-        self.filename = filename
+file1 = open("2019613_.lvm", "r")
+line = file1.read()
+print(line)
+
+
