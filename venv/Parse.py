@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 # Parse.py parses data from a .lvm file
 
+import csv
+from io import StringIO
+
 __author__ = "Sarah Shinn"
 __email__ = "sashinn@ucsd.edu"
 __status__ = "Prototype"
@@ -22,7 +25,6 @@ class Parse:
     def get_data(self):
         data = self._read_file()
         return data
-
     def print_var(self):
         print(self.filename)
 
@@ -30,17 +32,24 @@ class Parse:
         data = self.get_data()
         word = 'Comment'
         start_index = data.find(word) + len(word)
-        data_block = data[start_index:]
-        
+
         if start_index != -1:
             print(start_index)
-            print(data_block)
+            data_block = data[start_index:]
+            # print(data_block)
 
+            grid = data_block.split('\n')
+            grid.pop(0)
+            grid.pop(len(grid) - 1)
+            col = 0
+            for row in grid:
+                grid[col] = row.split('\t')
+                grid[col].pop(0)
+                col += 1
+            print(grid)
 
-        # find the first instance Comment
-        # clean up data
-        # start reading in variables in a 2 dimensional array
-
+# next step: create constants for measurement types and sort data
+# prep data to be ready for Data.py
 
 obj = Parse("2019613_.lvm")
 # obj.print_var()
