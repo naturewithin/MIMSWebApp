@@ -17,6 +17,7 @@ class Parse:
     def get_date(self):
         return "2019-06-19"
 
+# research how to add a try catch block and how to control errors here
     def _read_file(self):
         with open(self.filename, "r") as f:
             data = f.read()
