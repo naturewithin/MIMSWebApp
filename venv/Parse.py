@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Parse.py parses data from a .txt file
+# Parse.py parses data from a .lvm file
 
 __author__ = "Sarah Shinn"
 __email__ = "sashinn@ucsd.edu"
