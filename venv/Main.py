@@ -17,7 +17,7 @@ app.layout = html.Div(children=[
 
     html.Div(children='''
         This is a development server. Do not use it in production 
-        deployment. Deployment server credits see: 
+        deployment. Deployment server credits: 
         https://dash.plot.ly/getting-started
 '''),
 
