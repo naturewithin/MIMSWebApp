@@ -35,10 +35,7 @@ class Parse:
         start_index = data.find(word) + len(word)
 
         if start_index != -1:
-            print(start_index)
             data_block = data[start_index:]
-            # print(data_block)
-
             grid = data_block.split('\n') # create grid rows
             grid.pop(0) # remove first blank value
             grid.pop(len(grid) - 1) # remove last blank value
