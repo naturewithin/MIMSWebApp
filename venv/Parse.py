@@ -33,7 +33,6 @@ class Parse:
         data = self.get_data()
         word = 'Comment'
         start_index = data.find(word) + len(word)
-
         if start_index != -1:
             data_block = data[start_index:]
             grid = data_block.split('\n') # create grid rows
