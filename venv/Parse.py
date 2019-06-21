@@ -9,14 +9,10 @@ __status__ = "Prototype"
 
 # the Parse class opens a .lvm file and creates a 2-dimensional array of values
 class Parse:
-
     # TODO: fetch .lvm file by "Last Modified" and initialize filename
     def __init__(self, filename):
         self.filename = filename
         # TODO: pass instance variable filename into constructor
-
-    def get_date(self):
-        return "2019-06-19"
 
     # TODO: research how to add a try catch block and how to control errors here
     def _read_file(self):
