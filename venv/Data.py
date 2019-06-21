@@ -21,5 +21,19 @@ class Data:
         grid = lvm_data.parse()
         return grid
 
+# check for errors
+    def get_julian_day(self, key):
+        grid = self.get_data()
+        for row in range(len(grid)):
+            if row == key:
+                return grid[row][0]
+
+
 Test = Data()
 print(Test.get_data())
+print(Test.grid)
+print(Test.get_julian_day(4))
+
+Test = Data()
+print(Test.get_data())
+

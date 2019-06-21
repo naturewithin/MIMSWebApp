@@ -31,12 +31,19 @@ class Parse:
         start_index = data.find(word) + len(word)
         if start_index != -1:
             data_block = data[start_index:]
-            grid = data_block.split('\n')  # create grid rows
-            grid.pop(0)  # remove first blank value
-            grid.pop(len(grid) - 1)  # remove last blank value
-            col = 0
-            for row in grid:
-                grid[col] = row.split('\t')  # create grid columns
-                grid[col].pop(0)  # remove leading blank values
-                col += 1
-        return grid
+
+            data_list = data_block.split('\n')  # create grid rows
+            data_list.pop(0)  # remove first blank value
+            data_list.pop(len(data_list) - 1)  # remove last blank value
+            for row in range(len(data_list)):
+                data_list[row] = data_list[row].split('\t')  # create grid columns
+                data_list[row].pop(0)  # remove leading blank values
+                ["" if x == "\t" else x for x in data_list[row]]
+                for col in range(len(data_list[row])):
+                    data_list[row][col] = float(data_list[row][col])
+        return data_list
+
+
+p = Parse('2019613_.lvm')
+p.parse()
+
