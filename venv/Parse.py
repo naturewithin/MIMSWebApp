@@ -2,22 +2,23 @@
 # -*- coding: utf-8 -*-
 # Parse.py parses data from a .lvm file
 
-import csv
-from io import StringIO
-
 __author__ = "Sarah Shinn"
 __email__ = "sashinn@ucsd.edu"
 __status__ = "Prototype"
 
 
+# the Parse class opens a .lvm file and creates a 2-dimensional array of values
 class Parse:
+
+    # fetch .lvm file by "Last Modified" and initialize a variable filename
     def __init__(self, filename):
         self.filename = filename
+        # pass instance variable filename into constructor
 
     def get_date(self):
         return "2019-06-19"
 
-# research how to add a try catch block and how to control errors here
+    # research how to add a try catch block and how to control errors here
     def _read_file(self):
         with open(self.filename, "r") as f:
             data = f.read()
@@ -26,9 +27,8 @@ class Parse:
     def get_data(self):
         data = self._read_file()
         return data
-    def print_var(self):
-        print(self.filename)
 
+    # parse() takes .lvm input as a string and returns a clean 2-D array of data
     def parse(self):
         data = self.get_data()
         word = 'Comment'
@@ -39,21 +39,12 @@ class Parse:
             data_block = data[start_index:]
             # print(data_block)
 
-            grid = data_block.split('\n')
-            grid.pop(0)
-            grid.pop(len(grid) - 1)
+            grid = data_block.split('\n') # create grid rows
+            grid.pop(0) # remove first blank value
+            grid.pop(len(grid) - 1) # remove last blank value
             col = 0
             for row in grid:
-                grid[col] = row.split('\t')
-                grid[col].pop(0)
+                grid[col] = row.split('\t') # create grid columns
+                grid[col].pop(0) # remove leading blank values
                 col += 1
-            print(grid)
-
-# next step: create constants for measurement types and sort data
-# prep data to be ready for Data.py
-
-obj = Parse("2019613_.lvm")
-# obj.print_var()
-# print(obj.get_date())
-# print(obj.get_data())
-obj.parse()
+        return grid
