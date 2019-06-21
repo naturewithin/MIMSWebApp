@@ -10,6 +10,8 @@ __status__ = "Prototype"
 
 class Data:
 
+    
+
     def __init__(self):
         self.grid = self.get_data()
 
@@ -22,7 +24,7 @@ class Data:
         return grid
 
 # check for errors
-    def get_julian_day(self, key):
+    def get_julian_day(self, key): # key is the line number
         grid = self.get_data()
         for row in range(len(grid)):
             if row == key:
@@ -34,6 +36,4 @@ print(Test.get_data())
 print(Test.grid)
 print(Test.get_julian_day(4))
 
-Test = Data()
-print(Test.get_data())
 
