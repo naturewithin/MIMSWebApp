@@ -1,0 +1,26 @@
+##MIMS WEB APP PLAN
+
+
+app_main.py: executes the program in a web app
+- currently using a sample deployment server provided by Dash
+Parse.py: reads in a .lvm file of variables
+Plots.py: create data models using Data.py
+Data.py: initializes data variables to be used in other classes
+README.md: description
+
+Use a cron job to automate daily data updates
+
+STEP 1:
+- create Parse.py
+
+STEP 2:
+- Create Data.py from Parse.py
+
+STEP 3:
+- Create Plots.py from Data.py
+
+STEP 4:
+- Create app_main.py from Plots.py
+
+STEP 5:
+- Automate daily updates using cron

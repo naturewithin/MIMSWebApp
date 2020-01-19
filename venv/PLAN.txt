@@ -1,26 +1,29 @@
 ##MIMS WEB APP PLAN
 
 
-app_main.py: executes the program in a web app
-- currently using a sample deployment server provided by Dash
-Parse.py: reads in a .lvm file of variables
-Plots.py: create data models using Data.py
-Data.py: initializes data variables to be used in other classes
-README.md: description
-
-Use a cron job to automate daily data updates
-
 STEP 1:
-- create Parse.py
+- create Parse.py - complete
 
 STEP 2:
-- Create Data.py from Parse.py
+- Create Data.py from Parse.py - complete
 
 STEP 3:
-- Create Plots.py from Data.py
+- Create Plots.py from Data.py - ccomplete
 
 STEP 4:
-- Create app_main.py from Plots.py
+- Create a file for each graph to create new objects on the plot.ly website - complete
+- Embed graphs into development website at www.retirotigre.000webhostapp.com/MIMS.html - complete
 
-STEP 5:
-- Automate daily updates using cron
+STEP 6:
+- Change filename to be a program argument
+- Create a script to add all .lvm files in directory to a sql database
+- Update variables to match database
+
+STEP 7:
+- Error handling and rigorous testing
+
+STEP 8:
+- Automate daily updates using task scheduler
+
+STEP 9:
+- Hit up python channel on IRC and use UCSD resources for code review
