@@ -6,6 +6,8 @@ __author__ = "Sarah Shinn"
 __email__ = "sashinn@ucsd.edu"
 __status__ = "Prototype"
 
+import csv
+
 
 # the Parse class opens a .lvm file and creates a 2-dimensional array of values
 class Parse:
@@ -38,9 +40,9 @@ class Parse:
                 data_list[row] = data_list[row].split('\t')  # create grid cols
                 data_list[row].pop(0)  # remove leading blank values
                 for col in range(len(data_list[row])):
-                    data_list[row][col] = float(data_list[row][col])
+                    try:
+                        data_list[row][col] = float(data_list[row][col])
+                    except:
+                        pass
         return data_list
 
-
-# p = Parse('2019613_.lvm')
-# print(p.parse())

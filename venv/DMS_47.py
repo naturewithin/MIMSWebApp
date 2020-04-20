@@ -3,6 +3,8 @@ import plotly
 import chart_studio.plotly as py
 import plotly.graph_objs as go
 import chart_studio
+import plotly.io as pio
+from outliers import smirnov_grubbs as grubbs
 
 chart_studio.tools.set_credentials_file(username='retirotigre', api_key='1CRlTIJ3MQwnaossRixV')
 
@@ -10,7 +12,7 @@ data_var = d.Data()
 
 trace1 = go.Scatter(
     x=data_var.get_julian_date(),
-    y=data_var.get_DMS_47(),
+    y=grubbs.test(data_var.get_DMS_47(), alpha=0.99),
     xaxis='x1',
     yaxis='y1',
     marker=go.scatter.Marker(
@@ -56,4 +58,4 @@ layout = go.Layout(
     )
 )
 fig = go.Figure(data=data, layout=layout)
-py.plot(fig, filename='DMS_47')
+pio.write_html(fig, file='DMS-47.html', auto_open=True)
