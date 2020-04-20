@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fac8ff4d-fcfe-415e-a98c-8c4ae68dc92d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/2019614_.lvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/2019616_.lvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/2019617_.lvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/2019618_.lvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Ar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Bromoform_171.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Bromoform_173.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Bromoform_175.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/DMS_47.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/DMS_62.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Isoprene_53.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Isoprene_67.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Isoprene_68.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/N2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/N2_Ar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/O2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/O2_Ar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Temperature.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Total.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Water.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/2019613_.lvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/Data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/PLAN.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/Parse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/share/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/PLAN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/PLAN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/share/Plots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
-    </list>
+    <list default="true" id="fac8ff4d-fcfe-415e-a98c-8c4ae68dc92d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,23 +33,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MIMSWebApp2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MIMSWebApp2" type="462c0819:PsiDirectoryNode" />
+              <item name="blank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blank" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MIMSWebApp2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MIMSWebApp2" type="462c0819:PsiDirectoryNode" />
+              <item name="blank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blank" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,8 +91,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32884902" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963924" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32817337" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
