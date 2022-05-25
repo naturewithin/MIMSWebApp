@@ -9,7 +9,7 @@ import chart_studio
 import plotly.io as pio
 from outliers import smirnov_grubbs as grubbs
 
-path = 'C:\\Users\\Ghostberry\\Dropbox\\MIMS_Data'  # use your path
+path = 'C:\\Users\\User\\Dropbox\\MIMS_Data'  # use your path
 all_files = glob.glob(path + "/*.lvm")
 
 JULIAN_DATE_IDX = 1
